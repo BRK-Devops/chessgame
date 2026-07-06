@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>♚ CheckMate</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="auth-section">
+      <div id="login-form">
+        <h2>♚ Login</h2>
+        <input type="text" id="login-username" placeholder="Username" />
+        <input type="password" id="login-password" placeholder="Password" />
+        <button id="login-btn">Enter</button>
+        <p>New? <a href="#" id="show-register">Create account</a></p>
+      </div>
+      <div id="register-form" style="display:none;">
+        <h2>♛ Register</h2>
+        <input type="text" id="reg-username" placeholder="Username" />
+        <input type="email" id="reg-email" placeholder="Email" />
+        <input type="password" id="reg-password" placeholder="Password" />
+        <button id="register-btn">Join</button>
+        <p>Already have one? <a href="#" id="show-login">Login</a></p>
+      </div>
+    </div>
+    <div id="game-section" style="display:none;">
+      <h2>♔ Welcome, <span id="username-display"></span></h2>
+      <button id="start-game-btn">♜ Start Game</button>
+      <div id="board-container" style="display:none;">
+        <div id="board"></div>
+        <div id="status"></div>
+        <button id="new-game-btn">⟳ New Game</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/1.0.0/chess-1.0.0.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
